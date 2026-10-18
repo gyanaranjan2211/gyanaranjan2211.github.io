@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Official personal profile and photo gallery of Gyanaranjan Sahoo.">
+<meta name="robots" content="index,follow">
+<title>Gyanaranjan Sahoo | Personal Profile</title>
+<style>
+:root{--bg:#090909;--panel:#151515;--gold:#d9b56d;--gold2:#f5df9d;--text:#f8f5ee;--muted:#b8b2a6}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;background:rgba(9,9,9,.92);backdrop-filter:blur(12px);border-bottom:1px solid #3b3020;z-index:5}
+nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:16px 0}.brand{font-weight:800;letter-spacing:1px;color:var(--gold2)}nav a{text-decoration:none;color:var(--muted);margin-left:18px;font-size:.92rem}nav a:hover{color:var(--gold2)}
+.hero{min-height:78vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px;padding:60px 0}
+.kicker{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:.78rem;font-weight:bold}.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:1.02;margin:18px 0}.hero h1 span{color:var(--gold2)}.hero p{color:var(--muted);font-size:1.08rem;max-width:560px}
+.btn{display:inline-block;background:linear-gradient(120deg,var(--gold),var(--gold2));color:#17120a;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:3px;margin-top:14px}.hero-photo{height:530px;width:100%;object-fit:cover;object-position:center 25%;border:1px solid #8e6d36;box-shadow:15px 15px 0 #282014}
+section{padding:70px 0}.section-title{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px}.section-title span{color:var(--gold)}.sub{color:var(--muted);margin:0 0 30px}.about-card{background:linear-gradient(135deg,#171512,#101010);border:1px solid #3a3020;padding:28px;border-left:3px solid var(--gold);max-width:850px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.tile{margin:0;background:var(--panel);border:1px solid #332b20;overflow:hidden}.tile img{display:block;width:100%;height:390px;object-fit:cover;transition:transform .35s}.tile:hover img{transform:scale(1.035)}.tile figcaption{padding:12px 14px;color:var(--gold2);font-size:.9rem}
+.contact{background:#11100d;border-top:1px solid #3b3020;text-align:center}.contact p{color:var(--muted)}footer{padding:22px 0;color:#827b6d;font-size:.82rem;text-align:center;border-top:1px solid #28231b}
+@media(max-width:760px){nav{align-items:flex-start;flex-direction:column}nav a{margin:0 14px 0 0}.hero{grid-template-columns:1fr;padding:42px 0}.hero-photo{height:420px;max-width:480px}.gallery{grid-template-columns:repeat(2,1fr)}.tile img{height:300px}}
+@media(max-width:480px){.gallery{grid-template-columns:1fr}.tile img{height:auto;max-height:520px}.hero-photo{height:380px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav><a class="brand" href="#home">GYANARANJAN SAHOO</a><div><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div></nav></div></header>
+<main>
+<div class="wrap hero" id="home">
+<div><div class="kicker">Personal profile & portfolio</div><h1>Gyanaranjan<br><span>Sahoo.</span></h1><p>A personal space to share my photos, moments, and journey. Welcome to my official profile website.</p><a class="btn" href="#gallery">Explore my photos ↓</a></div>
+<img class="hero-photo" src="images/outdoor-portrait.jpg" alt="Portrait photo of Gyanaranjan Sahoo">
+</div>
+<section id="about"><div class="wrap"><div class="kicker">A little introduction</div><h2 class="section-title">About <span>Me</span></h2><div class="about-card"><p>Hi, I'm <strong>Gyanaranjan Sahoo</strong>. This website is my personal photo gallery and online profile. I'll use this space to share selected portraits and memorable moments.</p><p>Thanks for visiting.</p></div></div></section>
+<section id="gallery"><div class="wrap"><div class="kicker">Selected moments</div><h2 class="section-title">Photo <span>Gallery</span></h2><p class="sub">A few photos from my collection.</p><div class="gallery">
+<figure class="tile"><img src="images/jersey-photo.jpg" alt="Gyanaranjan Sahoo wearing a jersey, seen near a mirror" loading="lazy"><figcaption>Jersey moment</figcaption></figure>
+<figure class="tile"><img src="images/outdoor-portrait.jpg" alt="Outdoor portrait of Gyanaranjan Sahoo" loading="lazy"><figcaption>Outdoor portrait</figcaption></figure>
+<figure class="tile"><img src="images/portrait-closeup.jpg" alt="Portrait of Gyanaranjan Sahoo in a white shirt" loading="lazy"><figcaption>Portrait</figcaption></figure>
+<figure class="tile"><img src="images/night-portrait.jpg" alt="Full-length evening portrait of Gyanaranjan Sahoo" loading="lazy"><figcaption>Evening portrait</figcaption></figure>
+<figure class="tile"><img src="images/daylight-portrait.jpg" alt="Daylight portrait of Gyanaranjan Sahoo" loading="lazy"><figcaption>Daylight portrait</figcaption></figure>
+</div></div></section>
+<section id="contact" class="contact"><div class="wrap"><div class="kicker">Stay connected</div><h2 class="section-title">Thanks for <span>visiting</span></h2><p>More updates and public profile links can be added here later.</p></div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> Gyanaranjan Sahoo · Personal website</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
